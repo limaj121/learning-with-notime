@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        /* Set the text color of all links (<a>) that open in a new tab (i.e., have target="_blank") to green */
+        a[target="_blank"] {
+            color: green;
+        }
+
+        /* Change the background color of links that have a title attribute to lightgray */
+        a[title] {
+            background-color: lightgray;
+        }
+
+        /* Make the text color of text input fields (<input type="text">) blue */
+        input[type="text"] {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://example.com" target="_blank">Example Link</a>
+    <a href="https://example.com" title="Example">Example with Title</a>
+    <input type="text" placeholder="Enter your name">
+    <input type="email" placeholder="Enter your email">
+</body>
+
+</html>
